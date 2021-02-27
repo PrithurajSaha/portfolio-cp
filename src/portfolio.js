@@ -5,7 +5,7 @@
 import emoji from "react-easy-emoji";
 
 const illustration = {
-  animated: true // set to false to use static SVG
+  animated: true, // set to false to use static SVG
 };
 
 const greeting = {
@@ -14,9 +14,8 @@ const greeting = {
   subTitle: emoji(
     "A passionate Learning Software Developer 🚀 having an experience of designing and building Web applications with JavaScript / Reactjs and some other cool libraries and frameworks."
   ),
-  resumeLink:
-    "/",
-  displayGreeting: true // Set false to hide this section, defaults to true
+  resumeLink: "/",
+  displayGreeting: true, // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
@@ -31,7 +30,7 @@ const socialMediaLinks = {
   // stackoverflow: "https://stackoverflow.com/",
   // instagram: 'https://www.instagram.com/',
   // twitter: 'https://twitter.com/',
-  display: true // Set true to display this section, defaults to false
+  display: true, // Set true to display this section, defaults to false
 };
 
 // Skills Section
@@ -44,9 +43,7 @@ const skillsSection = {
       "⚡ Develop interactive Front end / User Interfaces for your web applications"
     ),
     emoji("⚡ Progressive Web Applications"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase"
-    )
+    emoji("⚡ Integration of third party services such as Firebase"),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -55,30 +52,30 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      fontAwesomeClassname: "fab fa-html5",
     },
     {
       skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      fontAwesomeClassname: "fab fa-css3-alt",
     },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      fontAwesomeClassname: "fab fa-js",
     },
     {
       skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      fontAwesomeClassname: "fab fa-react",
     },
     {
       skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      fontAwesomeClassname: "fab fa-npm",
     },
     {
       skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    }
+      fontAwesomeClassname: "fas fa-fire",
+    },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Education Section
@@ -92,9 +89,7 @@ const educationInfo = {
       subHeader: "Master of Science in Computer Science",
       duration: "September 2017 - April 2019",
       desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"],
     },
     {
       schoolName: "Stanford University",
@@ -103,9 +98,9 @@ const educationInfo = {
       duration: "September 2013 - April 2017",
       desc:
         "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
-  ]
+      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"],
+    },
+  ],
 };
 
 // Your top 3 proficient stacks/tech experience
@@ -115,18 +110,18 @@ const techStack = {
   experience: [
     {
       Stack: "Frontend / Design", //Insert stack or technology you have experience in
-      progressPercentage: "70%" //Insert relative proficiency in percentage
+      progressPercentage: "70%", //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
-      progressPercentage: "40%"
+      progressPercentage: "40%",
     },
     {
       Stack: "Programming",
-      progressPercentage: "80%"
-    }
+      progressPercentage: "80%",
+    },
   ],
-  displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: true, // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
@@ -139,14 +134,13 @@ const workExperiences = {
       company: "Clever Programmer",
       companylogo: require("./assets/images/cpLogo.png"),
       date: "September 2020 – Present",
-      desc:
-        "Changing lives of developers one line of code at a time.",
+      desc: "Changing lives of developers one line of code at a time.",
       descBullets: [
         "Custom building applications",
         "Coaching",
         "Streaming live on YouTube",
-        "Creating tutorials"
-      ]
+        "Creating tutorials",
+      ],
     },
     {
       role: "Product Owner (PSD2)",
@@ -154,7 +148,7 @@ const workExperiences = {
       companylogo: require("./assets/images/ersteLogo.jpg"),
       date: "July 2019 – September 2020",
       desc:
-        "I lead software developers building the API for the bank in order to fulfil the PSD2 regulation requirements."
+        "I lead software developers building the API for the bank in order to fulfil the PSD2 regulation requirements.",
     },
     {
       role: "Junior Information Security & Systems Representative",
@@ -162,9 +156,9 @@ const workExperiences = {
       companylogo: require("./assets/images/vodafoneLogo.png"),
       date: "November 2018 – July 2019",
       desc:
-        "I've conducted internal audit making sure the organization is compliant with the GDPR."
-    }
-  ]
+        "I've conducted internal audit making sure the organization is compliant with the GDPR.",
+    },
+  ],
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
@@ -174,7 +168,7 @@ const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
   githubUserName: "PrithurajSaha", // Change to your github username to view your profile in Contact Section.
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -185,29 +179,18 @@ const bigProjects = {
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Slack-Clone",
+      projectDesc: "This is the slack clone I built while in a workshop",
       footerLink: [
         {
           name: "Visit Website",
-          url: "fa"
-        }
+          url: "fa",
+        },
         //  you can add extra buttons here.
-      ]
+      ],
     },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: ""
-        }
-      ]
-    }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -227,20 +210,17 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url:
-            ""
+          url: "",
         },
         {
           name: "Award Letter",
-          url:
-            ""
+          url: "",
         },
         {
           name: "Google Code-in Blog",
-          url:
-            ""
-        }
-      ]
+          url: "",
+        },
+      ],
     },
     {
       title: "Google Assistant Action",
@@ -250,10 +230,9 @@ const achievementSection = {
       footerLink: [
         {
           name: "View Google Assistant Action",
-          url:
-            ""
-        }
-      ]
+          url: "",
+        },
+      ],
     },
 
     {
@@ -261,15 +240,15 @@ const achievementSection = {
       subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
       image: require("./assets/images/pwaLogo.webp"),
       footerLink: [
-        {name: "Certification", url: ""},
+        { name: "Certification", url: "" },
         {
           name: "Final Project",
-          url: ""
-        }
-      ]
-    }
+          url: "",
+        },
+      ],
+    },
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -284,29 +263,27 @@ const blogSection = {
       url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
       title: "Why REACT is The Best?",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
+        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies.",
+    },
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
 
 const talkSection = {
   title: "TALKS",
-  subtitle: emoji(
-    ""
-  ),
+  subtitle: emoji(""),
 
   talks: [
     {
       title: "",
       subtitle: "",
       slides_url: "",
-      event_url: ""
-    }
+      event_url: "",
+    },
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -316,10 +293,8 @@ const podcastSection = {
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
 
   // Please Provide with Your Podcast embeded Link
-  podcast: [
-    ""
-  ],
-  display: false // Set false to hide this section, defaults to true
+  podcast: [""],
+  display: false, // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
@@ -327,14 +302,14 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   // number: "",
-  email_address: "prithuraj2009@gmail.com"
+  email_address: "prithuraj2009@gmail.com",
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
+  display: false, // Set true to display this section, defaults to false
 };
 
 export {
@@ -352,5 +327,5 @@ export {
   talkSection,
   podcastSection,
   contactInfo,
-  twitterDetails
+  twitterDetails,
 };
