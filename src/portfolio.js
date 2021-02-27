@@ -178,19 +178,19 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/slack-clone.png"),
       projectName: "Slack-Clone",
       projectDesc: "This is the slack clone I built while in a workshop",
       footerLink: [
         {
           name: "Visit Website",
-          url: "fa",
+          url: "https://slack-clone-reactchallenge.web.app/",
         },
         //  you can add extra buttons here.
       ],
     },
   ],
-  display: false, // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
